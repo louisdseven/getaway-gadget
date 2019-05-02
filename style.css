@@ -1,0 +1,184 @@
+*{
+    box-sizing:border-box;
+}
+body {
+    font-family: 'Noto Sans', sans-serif;
+    min-width:320px;
+    text-align: center; 
+    background-color: rgba(245, 235, 219, 0.986);
+}
+h1{
+    font-family: 'Fjalla One', sans-serif;
+    margin-top: 200px;
+    font-size:32px;
+    color: #722020;
+}
+h2{
+    font-family: 'Fjalla One', sans-serif;
+    margin-top: 75px;
+    font-size:26px;
+}
+input{
+    display: inline-block;
+    margin: 0 auto;
+    margin-top:25px;
+    font-size: 20px;
+    width: 230px;
+}
+select {
+    font-size: 20px;
+    padding:1.5px;
+}
+.hidden{
+    display: none;
+}
+ul, li{
+    display:inline;
+}
+ul{
+    padding: 0;
+}
+li> button {
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  min-width: 20%;
+  -webkit-transition-duration: 0.2s; /* Safari */
+  transition-duration: 0.2s;
+  cursor: pointer;
+  background-color: #CDCDCD; 
+  color: black; 
+  border: 2px solid gray;
+  border-bottom:none;
+  outline:none;
+}
+li> button:hover {
+    background-color: #333333;
+    color: white;
+}
+#searchAgain{
+    display:block;
+    margin: 0 auto;
+}
+.active {
+    background-color: #722020;
+    color: white;
+}
+.wait {
+    display:none;
+}
+.venueName{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 18px;
+}
+.venueButtons{
+    padding: 0;
+    min-width: 320px;
+}
+hr{
+    margin:0 -20px;
+    border-color:#333333;
+}
+.displayResults li{
+    padding-top:5px;
+    display:flex;
+}
+li img{
+    background-color:black;
+    margin-right:20px;
+    height: 55px;
+    border-radius:20px;
+}
+.img{
+    margin:auto 0;
+}
+button:hover {
+    cursor: pointer;
+}
+.location{
+    margin: 0 auto;
+    padding-right: 15px;
+}
+button[type='submit'] {
+    display: block;
+    margin:0 auto;
+    margin-top:15px;
+    font-size: 20px;
+    border: none;
+    color: white;
+    background: #722020;
+}
+input[type='text'], textarea {
+    background-color : white; 
+}
+#searchAgain {
+        margin-top:15px;
+        padding:10px;
+        font-size: 20px;
+        border: none;
+        color: white;
+        background: #722020;
+}
+button:active {
+    box-shadow: inset 0px 0px 10px #d3d3d3;
+    outline:0;
+}
+a {
+    color:black;
+    font-weight:700px; 
+}
+
+@media screen and (min-width: 600px) {
+    input {
+        width: 300px;
+    }
+    .displayResults li {
+        position: relative;
+        height: auto;
+        width:100%;
+    }
+    .img {
+        position: relative;
+        left: 15%;
+    }
+    .location {
+        position: relative; 
+        width: 300px;
+        right: 2%; 
+    }
+    input[type='text'], textarea {
+        margin-right:10px; 
+    }
+    button[type='submit'] {
+        margin-top:20px;
+        padding:5px;
+    }
+    li> button {
+        padding:10px 5px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .displayResults li {
+        position: relative;
+        height: 100px;
+        width:100%;
+    }
+    .img {
+        position: relative;
+        left: 20%;
+    }
+    .location {
+        position: relative;
+        width: auto;
+        right: 2%;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    h1, h2 {
+        margin-top: 25px;
+    }   
+}

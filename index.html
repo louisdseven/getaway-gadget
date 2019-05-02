@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Sans" rel="stylesheet">
+  <title>Getaway Gadget</title>
+</head>
+<body>
+    <section class='homePage'>
+        <h1>Pick a place to go:</h1>
+        <form id="search-query-form">
+            <input type="text" placeholder="city" id="city"  class="search-query"  required>
+            <select id='state'></select>
+            <button type="submit" class="submit-button">Lets GO!>></button>
+        </form>
+    </section>
+    <section class='results hidden'>
+        <div class ='displayWeather'>
+        </div>
+        <div class='venueButtons'>
+            <ul>
+                <li><button id='food' class="venues active" >Food</button></li>
+                <li><button id='events' class="venues">Events</button></li>
+                <li><button id='nightlife' class="venues">Nightlife</button></li>
+                <li><button id='hotel' class="venues">Hotel</button></li>
+            </ul>
+        </div>
+        <hr>
+        <section class='display'>
+            <div>
+                <ul class='displayResults'>
+                </ul>
+            </div>
+        </section>
+        <button id='searchAgain'>New Search</button>
+    </section>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
