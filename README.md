@@ -9,4 +9,6 @@ Languages used: HTML, CSS, JS and jQuery
 
 Live page: https://louisdseven.github.io/getaway-gadget/
 
+![image of main screen](https://imgur.com/9O0q6ye)
 
+![image of search results](https://imgur.com/kByAfxf)
